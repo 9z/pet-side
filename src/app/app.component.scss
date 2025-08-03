@@ -1,0 +1,40 @@
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  max-width: 430px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.header {
+  position: sticky;
+  top: 0;
+  background-color: #ffffff;
+  border-bottom: 1px solid #e1e8ed;
+  padding: 16px 20px;
+  text-align: center;
+  z-index: 100;
+
+  h1 {
+    margin: 0;
+    font-size: 20px;
+    font-weight: 700;
+    color: #262626;
+    letter-spacing: -0.5px;
+  }
+}
+
+.main-content {
+  flex: 1;
+  padding: 0;
+  background-color: #fafafa;
+}
+
+@media (max-width: 430px) {
+  .app-container {
+    max-width: 100%;
+    box-shadow: none;
+  }
+}
