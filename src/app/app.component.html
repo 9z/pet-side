@@ -2,7 +2,13 @@
   <header class="header">
     <h1>PET SIDE</h1>
   </header>
-  <main class="main-content"></main>
+  <main class="main-content">
+    <div class="posts-container">
+      @for (post of posts; track post.id) {
+        <app-post-item [post]="post"></app-post-item>
+      }
+    </div>
+  </main>
   <footer class="footer">
     <nav class="footer-nav">
       <button class="nav-button" type="button">
